@@ -1,7 +1,7 @@
 function Container() {
     return (
         <>
-            <div>Josue</div>
+            <div className="parent-container">Josue</div>
         </>
     )
 }
