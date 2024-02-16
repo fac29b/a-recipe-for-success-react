@@ -1,9 +1,10 @@
-import React from 'react'
-import "../css/Container.css"
+import React from 'react';
+import Input from './Input';
 import Button from './Button'
 import "../css/Button.css";
-import "../css/Input.css"
-import Input from './Input';
+import "../css/Input.css";
+import "../css/Container.css";
+
 
 
 export const Container = () => {
