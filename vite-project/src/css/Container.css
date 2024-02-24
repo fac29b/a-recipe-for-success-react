@@ -1,0 +1,25 @@
+.container {
+    height: 90vh;
+    width: 500px;
+    border: 1px black solid;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size: 10px;
+    text-wrap: balance;
+}
+
+h1 {
+    /* text-wrap: balance; */
+    text-align: justify;
+    padding: 0px 10px 0px 10px;
+    text-wrap: balance;
+}
+
+.button-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 80px;
+    border: 1px red solid;
+    height: 100px;
+}

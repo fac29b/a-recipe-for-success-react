@@ -1,0 +1,10 @@
+
+
+button {
+    text-transform: uppercase;
+    height: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: rgb(183, 235, 183);
+}

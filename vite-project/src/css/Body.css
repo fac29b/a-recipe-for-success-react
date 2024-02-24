@@ -1,0 +1,10 @@
+
+.parent-container {
+    height: 80vh;
+    width: 50%;
+    border: 10px rgb(120, 226, 88) solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}

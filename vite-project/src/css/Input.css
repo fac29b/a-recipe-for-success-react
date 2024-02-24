@@ -1,0 +1,9 @@
+.allergies {
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 40px;
+    background-color: rgb(183, 235, 183);
+    margin-left: 10px;
+}
