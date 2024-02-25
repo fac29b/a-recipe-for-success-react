@@ -5,6 +5,7 @@ import "../css/Button.css";
 import "../css/Input.css";
 import "../css/Container.css";
 import "../css/Body.css";
+import FetchOpenAI from "./OpenAi";
 
 export const Container = () => {
   return (
@@ -20,6 +21,7 @@ export const Container = () => {
         <Button>Peruvian</Button>
         <Button>Surprise me</Button>
       </section>
+      <FetchOpenAI />
     </main>
   );
 };
