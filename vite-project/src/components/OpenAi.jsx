@@ -2,11 +2,8 @@ import React, { useState, useEffect } from "react";
 import { OpenAI } from "openai";
 
 const FetchOpenAI = () => {
-  const [recipe, setRecipe] = useState("French"); // Example recipe!
-  const openai = new OpenAI({
-    apiKey: "import.meta.env.OPENAI_API_KEY",
-  });
-  console.log(openai);
+  // const [recipe, setRecipeType] = useState("");
+  // const [recipe, setRecipeData] = useState(null);
 
   useEffect(() => {
     const fetchOpenAICompletion = async () => {
@@ -14,22 +11,16 @@ const FetchOpenAI = () => {
         const response = await fetch("/openai", {
           method: "GET",
         });
-        // const response = await fetch(
-        //   "https://jsonplaceholder.typicode.com/posts/1",
-        //   {
-        //     method: "GET",
-        //   }
-        // );
 
         const data = await response.json();
-        console.log(data);
+        console.log("OpenAI API Response:", data);
       } catch (error) {
         console.error("Error fetching OpenAI completion:", error);
       }
     };
 
     fetchOpenAICompletion();
-  }, [recipe]);
+  }, []);
 
   return (
     <div>
