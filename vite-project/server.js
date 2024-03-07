@@ -30,7 +30,7 @@ const __dirname = fileURLToPath(new URL('.', import.meta.url));
   app.use(express.json());
   app.use(vite.middlewares);
 
-  app.get("/openai", async (req, res) => {
+  app.get("/api/openai", async (req, res) => {
     try {
       // Correct use of the gpt-3.5-turbo model
       const completion = await openai.chat.completions.create({
@@ -43,7 +43,7 @@ const __dirname = fileURLToPath(new URL('.', import.meta.url));
         ],
         max_tokens: 2000,
       });
-      res.json(completion);
+      res.json(completion.data);
     } catch (error) {
       console.error("Failed to fetch from OpenAI:", error);
       res.status(500).json({ error: "Failed to fetch from OpenAI" });
